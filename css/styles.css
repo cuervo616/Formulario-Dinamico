@@ -1,9 +1,16 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 header {
     background-color: #333;
     color: #fff;
-    padding: 1%;
+    padding: 0%;
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
 }
 
 footer{
@@ -11,8 +18,6 @@ footer{
     color: #fff;
     text-align: center;
     padding: 3%;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
@@ -47,3 +52,20 @@ footer{
     font-size: medium;
 }
 
+/* Estilos para el contenedor del formulario generado */
+.genform {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 1%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.ing-respuesta{
+    margin: 0%;
+    width: 15%;
+    height: 5%;
+    
+}

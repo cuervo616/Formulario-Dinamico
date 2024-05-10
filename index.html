@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
 <body>
-    <header class="cabecera">
-        <h1>FORMULARIO</h1>
-    </header>
-    <form action="#" id="pregunta1">
-        <div class="itemform">
-            <input type="text" class="enunciado-pregunta" id="p1" placeholder="Enunciado">
-            <select name="tipo-respuesta" id="s1" class="op-respuesta">
-                <option value="0">Seleccione</option>
-                <option value="1">Respuesta Abierta</option>
-                <option value="2">Opciones</option>
-                <option value="3">Casillas</option>
-            </select>
-        </div>
-        <div clas="itemform" id="generadorPreunta">
+    <div class="container" id="container-form">
+        <header class="cabecera">
+            <h1>FORMULARIO</h1>
+        </header>
+        <button id="btn-generar-form">Generar Formulario</button>
+        <form action="#" id="form-dinamico" class="formulario">
+            <!-- <div id="item1" class="itemform">
+                <input type="text" class="enunciado-pregunta" id="p1" placeholder="Enunciado">
+                <select name="tipo-respuesta" id="s1" class="op-respuesta">
+                    <option value="0">Seleccione</option>
+                    <option value="1">Respuesta Abierta</option>
+                    <option value="2">Opciones</option>
+                    <option value="3">Casillas</option>
+                </select>
+                <button id="btn-generar-p1" type="button">Generar</button>
+            </div> -->
+        </form>
+        <div class="btn-itemform" id="generadorPreunta">
             <button type="button" value="1" name="btnCreaPregunta" id="btn-crear" class="new"><h3>+</h3></button>
         </div>
-    </form>
-    <footer>
-        <label for="pie" class=>Realizado por: Pablo Quito</label>
-    </footer>
+        <footer>
+            <label class=>Realizado por: Pablo Quito</label>
+        </footer>
+    </div>
+    <div id="container-genform" class="genform">
+            
+    </div>
+    <script src="./js/main.js"></script>
 </body>
 </html>
